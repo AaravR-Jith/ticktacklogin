@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dr+Sugiyama&family=Mogra&display=swap" rel="stylesheet">
-    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -30,9 +31,10 @@
         <div class="right">
             <div class="login-form">
                 <h2>Login</h2>
-                <input type="text" placeholder="Username" required>
-                <input type="password" placeholder="Password" required>
-                <button>Login</button>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button id="loginBtn">Login</button>
+                <p id="errorMessage" class="error"></p>
             </div>
         </div>
     </div>
@@ -42,22 +44,24 @@
             <img src="1st.jpeg" alt="Task Dashboard">
         </div>
         <div class="desc"><span>Be organized, be productive!</span> <span>TickTask helps you manage tasks effortlessly,</span> 
-            <span>from daily to-dos to big projects</span><span>all in one place</span>."</div>
+            <span>from daily to-dos to big projects</span><span>all in one place."</span></div>
     </div>
+
     <div class="section">
         <div class="image">
-            <img src="team.webp"" alt="Team Collaboration">
+            <img src="team.webp" alt="Team Collaboration">
         </div>
-        <div class="desc">Work together seamlessly with real-time team collaboration tools.</div>
-       
+        <div class="desc"><span>Work together</span><span> seamlessly with real-time</span> <span> team collaboration tools.</span></div>
     </div>
 
     <div class="section">
         <div class="image">
             <img src="customize.webp" alt="Customization">
         </div>
-        <div class="desc">Personalize your workspace with themes, dark mode, and layouts.</div>
+        <div class="desc"><span>Personalize your workspace</span><span>with themes, dark mode,</span> 
+            <span> and layouts.</span></div>
     </div>
+
     <div class="footer">
         <button class="get-started">Get Started</button>
     </div>
